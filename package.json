@@ -1,0 +1,27 @@
+{
+  "name": "project-system-clang-complete",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "description": "Provides autocomplete information for the clang project system.",
+  "repository": "https://github.com/project-system-clang/complete",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "consumedServices": {
+    "clang-project.projectProvider": {
+      "versions": {
+        "1.0.0": "consumeProjectProvider"
+      }
+    }
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getAutocompleteProvider"
+      }
+    }
+  },
+  "dependencies": {
+  }
+}
